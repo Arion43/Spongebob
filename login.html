@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <!-- Основа -->
+  <main>
+    <section class="auth-form">
+      <div class="container">
+        <h2>Авторизация</h2>
+        <form id="loginForm">
+          <label for="username">Логин:</label>
+          <input type="text" id="username" name="username" minlength="4" maxlength="10" required>
+          
+          <label for="gender">Пол:</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+          </select>
+          
+          <label for="dob">Дата рождения:</label>
+          <input type="date" id="dob" name="dob" min="1950-01-01" max="2024-12-22" required>
+        
+          <button type="submit">Войти</button>
+        </form>
+        
+        <div id="error" style="color: red; display: none;"></div>
+        
+      </div>
+    </section>
+  </main>
+  
+  <script src="js/login.js"></script>
+</body>
+</html>
